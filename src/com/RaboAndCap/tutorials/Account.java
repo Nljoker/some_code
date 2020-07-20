@@ -5,7 +5,8 @@ import org.w3c.dom.ls.LSOutput;
 public class Account {
 
     private int balance;
-    private String bankName, IBAN, accountHolder;
+    private String bankName;
+    private final String IBAN,accountHolder;
 
     public Account(int balance, String bankName, String IBAN, String accountHolder) {
         this.balance = balance;

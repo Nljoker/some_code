@@ -3,6 +3,12 @@ package com.RaboAndCap.tutorials;
 public class Main {
 
     public static void main(String[] args) {
+
+
+
+
+
+        /*
         Account account1 = new Account(2000, "Rabobank", "NL33Rabo0135467758", "John");
         Account account2 = new Account(5000, "ABN AMRO", "NL33Rabo0135467758", "Jane");
         Account account3 = new Account(10000, "ING", "NL33INGB0135467758", "Peter");
@@ -26,6 +32,8 @@ public class Main {
         System.out.println();
 
         account1.transferTo(500, account2);
+
+         */
 
 
 
