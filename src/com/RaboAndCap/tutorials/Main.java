@@ -3,7 +3,20 @@ package com.RaboAndCap.tutorials;
 public class Main {
 
     public static void main(String[] args) {
-        Airplane airplane = new Airplane();
+        Airplane airplane = new Airplane("Passenger Plane ABC123");
+        Airplane airplane1 = new Airplane("Passenger Plane DDD888");
+        Airplane airplane2 = new Airplane("Passenger Plane ODL345");
+
+        CargoPlane cargo = new CargoPlane("Cargo Plane FF2134");
+        CargoPlane cargo1 = new CargoPlane("Cargo Plane PLA166");
+
+        System.out.println("Passenger planes from airport Eindhoven\n" + airplane.getName() + "\n" + airplane1.getName() + "\n" + airplane2.getName());
+        System.out.println();
+        System.out.println("Cargo planes from airport Eindhoven\n" + cargo.getName() + "\n" + cargo1.getName());
+        System.out.println();
+
+
+
 
         airplane.loadPassengers(151);
         airplane.takeOff();
@@ -11,6 +24,10 @@ public class Main {
         airplane.hitHome();
         System.out.println(airplane.hasLanded());
         airplane.unLoadPassengers();
+        System.out.println(airplane.passengersOnPlane);
+
+
+        cargo.loadCargo(25);
 
 
 

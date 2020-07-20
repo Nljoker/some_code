@@ -5,6 +5,12 @@ public class Airplane {
     public int maxPassengers = 150;
     public int passengersOnPlane;
 
+    public String getName() {
+        return name;
+    }
+
+    private String name;
+
     public int getPassengersOnPlane() {
         return passengersOnPlane;
     }
@@ -15,7 +21,8 @@ public class Airplane {
 
 
 
-    public Airplane() {
+    public Airplane(String name) {
+        this.name = name;
     }
 
     public void loadPassengers(int passengers) {
@@ -24,6 +31,7 @@ public class Airplane {
             passengersOnPlane = passengers - tooMuch;
             System.out.println("Sorry, but we couldn't board " + tooMuch + " passengers on the plane. They'll have to wait");
             System.out.println("The other " + passengersOnPlane + " will depart shortly");
+
         } else {
             passengers = passengersOnPlane;
             System.out.println("The plane will depart with " + passengers + "shortly");
