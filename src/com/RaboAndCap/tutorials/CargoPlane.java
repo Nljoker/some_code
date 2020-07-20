@@ -20,7 +20,7 @@ public class CargoPlane extends Airplane {
             int leftOverCargo = toLoadCargo - maxCapacityInTons ;
             System.out.println("Sorry, to much cargo. We'll only be taking " + leftOverCargo);
         } else {
-            System.out.println("The plane has loaded " + toLoadCargo);
+            System.out.println("The plane has loaded " + toLoadCargo + " of cargo");
             cargoOnPlane = toLoadCargo;
         }
 
