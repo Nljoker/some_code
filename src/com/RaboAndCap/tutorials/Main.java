@@ -3,6 +3,22 @@ package com.RaboAndCap.tutorials;
 public class Main {
 
     public static void main(String[] args) {
+        Airplane airplane = new Airplane();
+
+        airplane.loadPassengers(151);
+        airplane.takeOff();
+        System.out.println(airplane.isFlying());
+        airplane.hitHome();
+        System.out.println(airplane.hasLanded());
+        airplane.unLoadPassengers();
+
+
+
+
+
+
+
+        /*
         Rectangle rectangle1 = new Rectangle(3,10);
         Rectangle rectangle2 = new Rectangle(5,6);
 
@@ -15,6 +31,8 @@ public class Main {
         Rectangle rectangle = new Rectangle(3,10,"blue");
 
         System.out.println(rectangle.toString());
+
+         */
 
 
 
