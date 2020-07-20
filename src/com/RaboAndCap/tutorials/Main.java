@@ -3,6 +3,18 @@ package com.RaboAndCap.tutorials;
 public class Main {
 
     public static void main(String[] args) {
+        Rectangle rectangle1 = new Rectangle(3,10);
+        Rectangle rectangle2 = new Rectangle(5,6);
+
+        System.out.println(rectangle1.calculateSurface());
+        System.out.println(rectangle2.calculateSurface());
+
+        System.out.println(rectangle1.calculateCircumference());
+        System.out.println(rectangle2.calculateCircumference());
+
+        Rectangle rectangle = new Rectangle(3,10,"blue");
+
+        System.out.println(rectangle.toString());
 
 
 
