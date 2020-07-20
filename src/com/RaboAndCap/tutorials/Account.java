@@ -1,7 +1,5 @@
 package com.RaboAndCap.tutorials;
 
-import org.w3c.dom.ls.LSOutput;
-
 public class Account {
 
     private int balance;
@@ -14,6 +12,11 @@ public class Account {
         this.IBAN = IBAN;
         this.accountHolder = accountHolder;
     }
+
+    public boolean checkBalance(int transferAmount) {
+        return transferAmount <= balance;
+    }
+
 
     public String getAccountHolder() {
         System.out.println(accountHolder);
@@ -35,11 +38,11 @@ public class Account {
     }
 
     public void transferTo(int transferAmount, Account account) {
-        int transferMoney = balance - transferAmount;
-        int receiveMoney = account.balance + transferAmount;
         if (transferAmount > balance) {
             System.out.println("Sorry, you have insufficient funds, we couldn't transfer " + transferAmount + " to " + account.accountHolder);
         } else {
+            int transferMoney = balance - transferAmount;
+            int receiveMoney = account.balance + transferAmount;
             System.out.println(accountHolder + " has transferred " + transferAmount + " to " + account.accountHolder);
             System.out.println("Your current balance is " + transferMoney);
             System.out.println();
